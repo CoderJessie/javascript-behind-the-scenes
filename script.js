@@ -60,7 +60,8 @@ var addExpr = function (a, b) {
 };
 const addArrow = (a, b) => a + b;
 
-// Example
+// Example of Hoisting bug
+console.log(undefined);
 if (!numProducts) deleteShoppingCart();
 
 var numProducts = 10;
