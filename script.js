@@ -44,3 +44,14 @@ console.log(me);
 var me = 'Jonas';
 let job = 'teacher';
 const year = 1991;
+
+//Hoisting with functions
+console.log(addDecl(2, 3));
+function addDecl(a, b) {
+	return a + b;
+}
+
+const addExpr = function (a, b) {
+	return a + b;
+};
+const addArrow = (a, b) => a + b;
