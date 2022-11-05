@@ -80,11 +80,11 @@ console.log(z === window.z);
 */
 
 //The 'this' keyword in practice
-console.log(this);
+// console.log(this);
 
 const calcAge = function (birthYear) {
 	console.log(2037 - birthYear);
-	console.log(this);
+	// console.log(this);
 };
 calcAge(1991);
 
@@ -102,4 +102,11 @@ const jonas = {
 		console.log(2037 - this.year);
 	},
 };
-jonas.calcAge(1991);
+jonas.calcAge();
+
+const matilda = {
+	year: 2017,
+};
+
+matilda.calcAge = jonas.calcAge;
+matilda.calcAge();
