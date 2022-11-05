@@ -77,7 +77,6 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
-*/
 
 //The 'this' keyword in practice
 // console.log(this);
@@ -113,5 +112,13 @@ matilda.calcAge();
 
 // const f = jonas.calcAge;
 // f(); The 'this' keyword here is undefined so this variable would only display 'undefined' in the console.
+*/
 
 // Regular functions vs Arrow functions
+const jonas = {
+	year: 1991,
+	calcAge: function () {
+		console.log(this);
+		console.log(2037 - this.year);
+	},
+};
