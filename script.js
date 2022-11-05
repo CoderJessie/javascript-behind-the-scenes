@@ -110,3 +110,8 @@ const matilda = {
 
 matilda.calcAge = jonas.calcAge;
 matilda.calcAge();
+
+// const f = jonas.calcAge;
+// f(); The 'this' keyword here is undefined so this variable would only display 'undefined' in the console.
+
+// Regular functions vs Arrow functions
