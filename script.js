@@ -93,3 +93,13 @@ const calcAgeArrow = (birthYear) => {
 	console.log(this);
 };
 calcAgeArrow(1980);
+
+//Using the 'this' keyword inside a method
+const jonas = {
+	year: 1991,
+	calcAge: function () {
+		console.log(this);
+		console.log(2037 - this.year);
+	},
+};
+jonas.calcAge(1991);
