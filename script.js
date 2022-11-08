@@ -115,6 +115,8 @@ matilda.calcAge();
 */
 
 // Regular functions vs Arrow functions
+// var firstName = 'Matilda';
+
 const jonas = {
 	firstName: 'Jonas',
 	year: 1991,
@@ -122,6 +124,10 @@ const jonas = {
 		console.log(this);
 		console.log(2037 - this.year);
 	},
-	greet: () => console.log(`Hey ${this.firstName}`),
+
+	greet: function () {
+		console.log(this);
+		console.log(`Hey ${this.firstName}`);
+	},
 };
 jonas.greet();
