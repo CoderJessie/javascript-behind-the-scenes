@@ -159,4 +159,4 @@ var addArrow = (a, b) => {
 	console.log(arguments);
 	return a + b;
 };
-addArrow(2, 5, 8);
+addArrow(2, 5, 8); // argument keyword doesnt exist in arrow function
