@@ -161,7 +161,6 @@ var addArrow = (a, b) => {
 };
 addArrow(2, 5, 8); // argument keyword doesnt exist in arrow function
 
-*/
 
 //Primitives Vs Objects
 let age = 30;
@@ -177,4 +176,28 @@ const me = {
 const friend = me;
 friend.age = 27;
 console.log('Friend:', friend);
-console.log('Me', me);
+console.log('Me:', me);
+
+*/
+
+// Primitives Vs Objects in Practice
+// Primitives(Primitive types) in practice
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName);
+console.log(oldLastName);
+
+// Objects(Reference types) in practice
+const jessica = {
+	firstName: 'Jessica',
+	lastName: 'Williams',
+	age: 27,
+};
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before marriage:', jessica);
+console.log('After marriage:', marriedJessica);
+// marriedJessica = {};
+
+// Copying Objects
