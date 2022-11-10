@@ -210,8 +210,6 @@ const jessica2 = {
 
 const jessicaCopy = Object.assign({}, jessica2);
 jessicaCopy.lastName = 'Davis';
-console.log('Before marriage:', jessica2);
-console.log('After marriage:', jessicaCopy);
 
 jessicaCopy.family.push('Mary');
 jessicaCopy.family.push('John');
